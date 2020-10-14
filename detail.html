@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの屋敷</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/detail.css">
+	<link rel="stylesheet" href="css/btn.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner inner">
+			<h1 class="logo"><a href="index.html"><img src="img/logo_black.png" alt=""></a>
+			</h1>
+			<div class="header-links">
+				<nav class="menu">
+					<a href="list.html?category=men">MEN</a>
+					<a href="list.html?category=woman">WOMAN</a>
+					<a href="list.html?category=kids">KIDS</a>
+				</nav>
+				<div class="controls">
+					<a href="" class="controls-cart"><img src="img/icon_cart_black.svg" alt="">
+						<span class="cart-batch"></span>
+					</a>
+				</div>
+			</div>
+			<form action="list.html" autocomplete="off" method="GET">
+				<button type="submit" class="word-submit"></button>
+				<input type="text" name="freeword" class="word-search" placeholder="何かお探しですか？">
+			</form>
+			<a href="#" class="menu-trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+    </header>
+    <div id="page-detail" class="contents">
+       <div class="item-detail inner" data-item-id="">
+		   <div class="item-detail-main">
+			   <img src="" alt="" data-zoom-image="" id="zoom-img">
+			   <p class="mouse-note">画像にマウスを合わせると拡大します</p>
+		   </div>
+		   <div class="item-detail-info">
+			   <div class="new-lable">New</div>
+			   <h2 class="item-detail-name" data-item-parts="name"></h2>
+			   <div class="item-detail-brand">BRAND：<span data-item-parts="brand"></span></div>
+				<div class="item-size-select">Select Size：<span data-item-parts="size"></span></div>
+					<ul class="item-size">
+						<li>130</li>
+						<li>140</li>
+						<li>150</li>
+						<li>160</li>
+						<li>170</li>
+						<li>180</li>
+						<li>190</li>
+					</ul>
+					<div class="item-detail-price">¥<span data-item-parts="price"></span></div>
+					<div class="btn btn--cart"><span>カートに追加</span></div>
+					<div class="btn btn--fav"><span>お気に入りに入れる</span></div>
+					<div data-accordion="trigger">商品の説明を見る</div>
+					<div data-accordion="target" data-item-parts="text"></div>
+		   </div>
+	   </div>
+    </div>
+	<div class="inner">
+		<section class="c-section">
+			<div class="c-section-head">
+				<h2 class="c-section-title">レビューをする</h2>
+			</div>
+			<ul class="review">
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+			</ul>
+		</section>
+		<section class="c-section">
+			<div class="c-section-head">
+				<h2 class="c-section-title">PICK UP</h2>
+			</div>
+			<ul class="item-list thumbnail-list" data-item-list="pickup">		
+			</ul>
+		</section><!--pickup-->
+		<section class="c-section">
+			<div class="c-section-head">
+				<h2 class="c-section-title">お気に入りしたアイテム♡</h2>
+			</div>
+			<ul class="item-list" data-item-list="fav">				
+			</ul>
+		</section><!--お気に入り-->
+	</div>
+	
+
+	<footer class="footer">
+		<div class="footer-inner inner">
+			<div class="footer-logo">Hi6Ka2</div>
+			<ul class="sns">
+				<li>
+					<a href=""><img src="img/facebook.png" class="sns-icon" alt=""><span class="sns-name">FACEBOOK</span></a>
+				</li>
+				<li>
+					<a href=""><img src="img/twitter.png" class="sns-icon" alt=""><span class="sns-name">TWITTER</span></a>
+				</li>
+				<li>
+					<a href=""><img src="img/instagram.png" class="sns-icon" alt=""><span class="sns-name">INSTAGRAM</span></a>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer-link">
+			<li><a href="">ヘルプ</a></li>
+			<li><a href="">お問い合わせ</a></li>
+			<li><a href="">利用規約</a></li>
+			<li><a href="">採用情報</a></li>
+			<li><a href="">&copy; Hi6Ka2 Co., Ltd. </a></li>
+		</ul>
+	</footer>
+
+	<div class="modal-wrap">
+		<div class="modal-inner">
+			<div class="modal-close">×</div>
+			<h3 class="modal-title">ショッピングカート(<span class="cart-total-num"></span>点)</h3>
+			<ul id="cart-list" class="item-list thumbnail-list" >				
+			</ul>
+			<div class="cart-total">
+				合計金額：<span class="cart-total-price">1000円</span>
+			</div>
+			<a href="" class="btn btn--buy">購入する</a>
+		</div>
+	</div>
+
+	<script src="js/item_data.js"></script>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="js/jquery.elevatezoom.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+</body>
+</html>

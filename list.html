@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptの屋敷</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header-inner inner">
+			<h1 class="logo"><a href="index.html"><img src="img/logo_black.png" alt=""></a>
+			</h1>
+			<div class="header-links">
+				<nav class="menu">
+					<a href="list.html?category=men">MEN</a>
+					<a href="list.html?category=woman">WOMAN</a>
+					<a href="list.html?category=kids">KIDS</a>
+				</nav>
+				<div class="controls">
+					<a href="" class="controls-cart"><img src="img/icon_cart_black.svg" alt="">
+						<span class="cart-batch"></span>
+					</a>
+				</div>
+			</div>
+			<form action="list.html" autocomplete="off" method="GET">
+				<button type="submit" class="word-submit"></button>
+				<input type="text" name="freeword" class="word-search" placeholder="何かお探しですか？">
+			</form>
+			<a href="#" class="menu-trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+    </header>
+    <div id="page-list" class="contents">
+        <div class="inner list-area">
+            <aside class="sidebar">
+                <section class="sidebar-inner">
+                    <h3 class="sidebar-title">カテゴリー</h3>
+                    <div class="sidebar-body">
+                        <ul class="sidebar-list">
+                            <li><a href="list.html?category=men">MEN</a></li>
+                            <li><a href="list.html?category=woman">WOMAN</a></li>
+                            <li><a href="list.html?category=kids">KIDS</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sidebar-inner">
+                    <h3 class="sidebar-title">価格</h3>
+                    <div class="sidebar-body">
+                        <form action="list.html" method="get" id="price-form">
+                            <div class="price-select-wrap">
+                                <select name="price" class="price-select">
+                                    <option hidden="">価格を選択する</option>
+                                    <option value="1000">〜1000円</option>
+                                    <option value="2000">〜2000円</option>
+                                    <option value="3000">〜3000円</option>
+                                    <option value="4000">〜4000円</option>
+                                    <option value="5000">〜5000円</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="sidebar-inner">
+                    <h3 class="sidebar-title">ブランド</h3>
+                    <div class="sidebar-body">
+                        <ul class="sidebar-list" data-more-list="brand">
+                            <li> <a href="list.html?brand=AAA">AAA</a></li>
+                            <li> <a href="list.html?brand=BBB">BBB</a></li>
+							<li> <a href="list.html?brand=CCC">CCC</a></li>
+							<li> <a href="list.html?brand=DDD">DDD</a></li>
+                            <li> <a href="list.html?brand=EEE">EEE</a></li>
+							<li> <a href="list.html?brand=FFF">FFF</a></li>
+							<li> <a href="list.html?brand=GGG">GGG</a></li>
+                            <li> <a href="list.html?brand=HHH">HHH</a></li>
+							<li> <a href="list.html?brand=III">III</a></li>
+							<li> <a href="list.html?brand=JJJ">JJJ</a></li>
+                            <li> <a href="list.html?brand=KKK">KKK</a></li>
+                            <li> <a href="list.html?brand=LLL">LLL</a></li>
+                        </ul>
+                        <div data-more-btn="brand">もっと見る+</div>
+                    </div>
+                </section>
+			</aside>
+			<section class="c-section">
+				<h2 class="result_text"></h2>
+				<ul class="item-list sort-list" data-more-list="items">
+				</ul>
+				<div data-more-btn="items">もっと見る+</div>
+			</section>
+		</div>	
+    </div>
+	<div class="inner">
+		<section class="c-section">
+			<div class="c-section-head">
+				<h2 class="c-section-title">PICK UP</h2>
+			</div>
+			<ul class="item-list thumbnail-list" data-item-list="pickup">				
+			</ul>
+		</section><!--pickup-->
+		<section class="c-section">
+			<div class="c-section-head">
+				<h2 class="c-section-title">お気に入りしたアイテム♡</h2>
+			</div>
+			<ul class="item-list" data-item-list="fav">
+			</ul>
+		</section><!--お気に入り-->
+	</div>
+	
+
+	<footer class="footer">
+		<div class="footer-inner inner">
+			<div class="footer-logo">Hi6Ka2</div>
+			<ul class="sns">
+				<li>
+					<a href=""><img src="img/facebook.png" class="sns-icon" alt=""><span class="sns-name">FACEBOOK</span></a>
+				</li>
+				<li>
+					<a href=""><img src="img/twitter.png" class="sns-icon" alt=""><span class="sns-name">TWITTER</span></a>
+				</li>
+				<li>
+					<a href=""><img src="img/instagram.png" class="sns-icon" alt=""><span class="sns-name">INSTAGRAM</span></a>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer-link">
+			<li><a href="">ヘルプ</a></li>
+			<li><a href="">お問い合わせ</a></li>
+			<li><a href="">利用規約</a></li>
+			<li><a href="">採用情報</a></li>
+			<li><a href="">&copy; Hi6Ka2 Co., Ltd. </a></li>
+		</ul>
+	</footer>
+
+	
+
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+	</div>
+
+	<div class="modal-wrap">
+		<div class="modal-inner">
+			<div class="modal-close">×</div>
+			<h3 class="modal-title">ショッピングカート(<span class="cart-total-num"></span>点)</h3>
+			<ul id="cart-list" class="item-list thumbnail-list" >				
+			</ul>
+			<div class="cart-total">
+				合計金額：<span class="cart-total-price">1000円</span>
+			</div>
+			<a href="" class="btn btn--buy">購入する</a>
+		</div>
+	</div>
+
+
+	<script src="js/item_data.js"></script>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+</body>
+</html>
