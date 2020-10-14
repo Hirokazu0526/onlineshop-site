@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+// 詳細部分の全体
+
+.item-detail {
+    margin: 30px auto 80px auto;
+    display: flex;
+    padding: 30px;
+    background: #f2f2f2;
+
+    & img {
+        width: 100%;
+       display: block;
+    }
+      
+    &-main {
+        width: 50%;
+        margin-right: 3%;
+        
+
+        & .mouse-note {
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+
+    &-info {
+        width: 47%;
+
+    }
+
+    &-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &-brand {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    &-price {
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+}
+
+.new-lable{
+    display: inline-block;
+    padding: 5px 10px;
+    line-height: 1;
+    margin-bottom: 10px;
+    background: #f03a47;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+[data-accordion="trigger"] {
+    margin-top: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    
+    &:before {
+        content: "▼";
+        display: inline-block;
+        margin-right: 6px;
+    }
+
+    &.is-active {
+        &:before {
+            content: "ー";
+        }
+    }  
+}
+
+[data-accordion="target"] {
+    margin-top: 18px;
+    display: none;
+}
+
+
+.item-size {
+    margin-bottom: 20px;
+    font-size: 18px;
+
+    &-select {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    & li {
+        display: inline-block;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        background: #fff;
+        cursor: pointer;
+        margin-bottom: 3px;
+
+        &.is-active {
+            background: #333;
+            color: #fff;
+        }
+
+    }
+}
+
+// レビュー
+.review {
+    display: flex;
+    font-size: 30px;
+
+    & li {
+        margin-right: 20px;
+        color: #ccc;
+        cursor: pointer;
+
+        &.is-active {
+            color: #ffc107;
+        }
+    }
+}
+
+//スマホ詳細
+@media screen and (max-width: 768px) {
+    .item-detail {
+        display: block;
+        padding: 20px;
+        margin: 0 auto;
+
+        &-main {
+            width: auto;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        &-info {
+            width: auto;
+        }
+    }
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,63 @@
+.btn {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn span {
+  position: relative;
+  padding-left: 30px;
+}
+
+.btn span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.btn--cart {
+  background: #2996cc;
+}
+
+.btn--cart span:before {
+  background: url(../img/icon_cart_white.svg) center/cover no-repeat;
+}
+
+.btn--cart.is-storage {
+  background: #ccc;
+}
+
+.btn--fav {
+  background: #fff;
+  color: #333;
+}
+
+.btn--fav span:before {
+  background: url(../img/icon_heart.svg) center/cover no-repeat;
+}
+
+.btn--fav.is-storage {
+  background: #ccc;
+}
+
+.btn--buy {
+  background: #e73656;
+  color: #fff;
+}
+/*# sourceMappingURL=btn.css.map */

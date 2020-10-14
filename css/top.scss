@@ -1,0 +1,28 @@
+@charset "utf-8";
+//top-sliderここから
+
+.top-slider-wrap {
+	margin-bottom: 60px;
+
+}
+
+.top-slider {
+	&.inner {
+		width: auto;
+	}
+
+	& img {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.top-slider {
+		& img {
+			width: 100%;
+		}
+
+		&.inner {
+			margin: 0 0;
+		}
+	}
+}

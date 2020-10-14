@@ -1,0 +1,141 @@
+@charset "UTF-8";
+.item-detail {
+  margin: 30px auto 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  background: #f2f2f2;
+}
+
+.item-detail img {
+  width: 100%;
+  display: block;
+}
+
+.item-detail-main {
+  width: 50%;
+  margin-right: 3%;
+}
+
+.item-detail-main .mouse-note {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.item-detail-info {
+  width: 47%;
+}
+
+.item-detail-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item-detail-brand {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.item-detail-price {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.new-lable {
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 1;
+  margin-bottom: 10px;
+  background: #f03a47;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+[data-accordion="trigger"] {
+  margin-top: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+[data-accordion="trigger"]:before {
+  content: "▼";
+  display: inline-block;
+  margin-right: 6px;
+}
+
+[data-accordion="trigger"].is-active:before {
+  content: "ー";
+}
+
+[data-accordion="target"] {
+  margin-top: 18px;
+  display: none;
+}
+
+.item-size {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.item-size-select {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-size li {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #fff;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.item-size li.is-active {
+  background: #333;
+  color: #fff;
+}
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+}
+
+.review li {
+  margin-right: 20px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.review li.is-active {
+  color: #ffc107;
+}
+
+@media screen and (max-width: 768px) {
+  .item-detail {
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .item-detail-main {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .item-detail-info {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=detail.css.map */
